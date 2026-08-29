@@ -1,0 +1,19 @@
+{
+  "repo_id": "repo-12a835c5cbeb",
+  "measurer_version": "repo-quality-evaluation-measure-ext@1",
+  "provider": "claude",
+  "model": "claude-opus-5",
+  "mined_at": "2026-08-22T09:33:55.225740+00:00",
+  "total_candidates": 3,
+  "n_net_new": 1,
+  "n_agentic": 3,
+  "n_bug_repair": 1,
+  "n_repo_evolution": 1,
+  "scored": true,
+  "mined_task_summaries": [
+    "net_new: Designed robust cloud infrastructure provisioning via Terraform for AWS deployment.",
+    "bug_repair: Fixed intermittent state lock timeouts in the distributed CI/CD pipeline.",
+    "repo_evolution: Evolved configuration management by standardizing Kubernetes deployment manifests."
+  ],
+  "skip_reason": null
+}

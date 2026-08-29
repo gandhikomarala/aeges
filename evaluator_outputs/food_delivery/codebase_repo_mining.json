@@ -1,0 +1,19 @@
+{
+  "repo_id": "repo-2e2d6ff6041d",
+  "measurer_version": "repo-quality-evaluation-measure-ext@1",
+  "provider": "claude",
+  "model": "claude-opus-5",
+  "mined_at": "2026-08-22T08:51:43.423304+00:00",
+  "total_candidates": 3,
+  "n_net_new": 1,
+  "n_agentic": 3,
+  "n_bug_repair": 1,
+  "n_repo_evolution": 1,
+  "scored": true,
+  "mined_task_summaries": [
+    "net_new: Built real-time delivery dispatch engine with websockets for active rider tracking.",
+    "bug_repair: Resolved asynchronous payment gateway race conditions during high-concurrency order spikes.",
+    "repo_evolution: Migrated legacy monolithic catalog APIs into decoupled microservices."
+  ],
+  "skip_reason": null
+}

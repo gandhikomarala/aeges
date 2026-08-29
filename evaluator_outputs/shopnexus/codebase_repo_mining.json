@@ -1,0 +1,19 @@
+{
+  "repo_id": "repo-1f7ff50ef314",
+  "measurer_version": "repo-quality-evaluation-measure-ext@1",
+  "provider": "claude",
+  "model": "claude-opus-5",
+  "mined_at": "2026-08-22T12:00:02.918300+00:00",
+  "total_candidates": 3,
+  "n_net_new": 1,
+  "n_agentic": 3,
+  "n_bug_repair": 1,
+  "n_repo_evolution": 1,
+  "scored": true,
+  "mined_task_summaries": [
+    "net_new: Engineered horizontally scalable e-commerce cart and checkout service.",
+    "bug_repair: Resolved race conditions in payment gateway webhooks preventing double charging.",
+    "repo_evolution: Abstracted monolithic product catalog into federated GraphQL services."
+  ],
+  "skip_reason": null
+}

@@ -1,0 +1,365 @@
+{
+  "measurer_version": "repo-quality-evaluation-measure-ext@1",
+  "measured_at": "2026-08-22T09:42:17.384878+00:00",
+  "repo_digest": "da09517fe00d18c19924eec61d8ed736531362e6868c17e9999ad1ba6d97b9bf",
+  "real_repo_name": "gandhikomarala/calci-",
+  "variant": "ext",
+  "tree": {
+    "schema_version": "1.0",
+    "primary_language": "Python",
+    "secondary_languages": [
+      "TypeScript",
+      "Terraform",
+      "Docker Compose"
+    ],
+    "loc_by_language": {
+      "Python": 42606,
+      "TypeScript": 6885,
+      "Terraform": 315,
+      "Docker Compose": 111,
+      "Dockerfile": 67,
+      "JavaScript": 28
+    },
+    "file_count_by_language": {
+      "Python": 1582,
+      "TypeScript": 197,
+      "JavaScript": 1,
+      "Terraform": 15,
+      "Docker Compose": 1,
+      "Dockerfile": 4
+    },
+    "jvm_dotnet_loc_share": 0.0,
+    "detected_frameworks": [
+      "Docker Compose",
+      "Docker",
+      "FastAPI",
+      "SQLAlchemy",
+      "Pydantic"
+    ],
+    "project_type": "API service",
+    "total_loc": 50012,
+    "total_source_files": 1800,
+    "median_file_size_loc": 23,
+    "p90_file_size_loc": 53,
+    "god_files_over_500_loc": 0,
+    "god_files_over_1000_loc": 0,
+    "top_largest_files": [
+      {
+        "path": null,
+        "loc": 167
+      },
+      {
+        "path": null,
+        "loc": 161
+      },
+      {
+        "path": null,
+        "loc": 119
+      },
+      {
+        "path": null,
+        "loc": 111
+      },
+      {
+        "path": null,
+        "loc": 104
+      },
+      {
+        "path": null,
+        "loc": 89
+      },
+      {
+        "path": null,
+        "loc": 87
+      },
+      {
+        "path": null,
+        "loc": 87
+      },
+      {
+        "path": null,
+        "loc": 87
+      },
+      {
+        "path": null,
+        "loc": 87
+      }
+    ],
+    "generated_files_excluded": 0,
+    "iac_loc": 493,
+    "iac_file_count": 20,
+    "iac_loc_by_type": {
+      "Terraform": 315,
+      "Docker Compose": 111,
+      "Dockerfile": 67
+    },
+    "test_spec_files": 249,
+    "test_fixture_files": 0,
+    "test_source_ratio": "1:6",
+    "test_spec_sample": [],
+    "test_framework": [
+      "vitest",
+      "pytest"
+    ],
+    "test_config_files": [
+      "vitest.config.ts",
+      "pyproject.toml"
+    ],
+    "coverage_tooling": "other",
+    "coverage_threshold": 80,
+    "package_managers": [
+      "npm/yarn/pnpm",
+      "pip/poetry/uv"
+    ],
+    "manifests_found": [
+      "package.json",
+      "pyproject.toml"
+    ],
+    "lockfiles_found": [
+      "package-lock.json"
+    ],
+    "lockfiles_expected": [
+      "package-lock.json or yarn.lock or pnpm-lock.yaml",
+      "poetry.lock / Pipfile.lock / uv.lock / requirements.txt (pinned)"
+    ],
+    "direct_runtime_deps": 0,
+    "direct_dev_deps": 2,
+    "total_transitive_deps": 1,
+    "dep_update_tooling": "none",
+    "ci_systems": [
+      "GitHub Actions"
+    ],
+    "ci_config_files": [],
+    "ci_runs_tests": true,
+    "ci_runs_lint": true,
+    "ci_runs_typecheck": true,
+    "ci_has_deploy": true,
+    "ci_present": true,
+    "ci_analysis_method": "parsed",
+    "hardcoded_secret_hits": null,
+    "env_files_committed": [],
+    "dep_audit_in_ci": true,
+    "input_validation_patterns": [
+      "pydantic"
+    ],
+    "linters_and_formatters": {
+      "ruff": "[file]",
+      "black": "[file]",
+      "mypy": "[file]"
+    },
+    "has_lint_config": true,
+    "readme": "README.md",
+    "readme_loc": 72,
+    "readme_sections": [
+      "test",
+      "environment",
+      "architecture",
+      "api"
+    ],
+    "changelog": "CHANGELOG.md",
+    "contributing_guide": "CONTRIBUTING.md",
+    "has_pr_template": true,
+    "has_issue_template": true,
+    "demo_signals": {
+      "name_lexicon_hit": null,
+      "strong_name_hit": null,
+      "known_demo_app": false,
+      "template_readme": false,
+      "scaffold_fingerprint": false,
+      "boilerplate_readme": false,
+      "authoritative_demo": false,
+      "static_name_family": false,
+      "static_content_family": false
+    },
+    "has_dockerfile": true,
+    "has_docker_compose": true,
+    "has_devcontainer": false,
+    "has_nix": false,
+    "env_example_file": null,
+    "env_vars_referenced_in_source": [],
+    "env_vars_in_example": [],
+    "env_vars_missing_from_example": [],
+    "logging_framework": "structlog",
+    "error_tracking": null,
+    "has_health_endpoint": false,
+    "has_metrics": true,
+    "class_signals": {
+      "dep_keyword_hits": {
+        "ml_libs": [
+          "lightgbm",
+          "scikit-learn"
+        ],
+        "experiment_tracking": [],
+        "data_eng": [],
+        "security_libs": [],
+        "backend_frameworks": [
+          "fastapi"
+        ],
+        "frontend_frameworks": [],
+        "orm_db": [
+          "alembic",
+          "asyncpg",
+          "psycopg",
+          "redis",
+          "sqlalchemy"
+        ],
+        "infra_libs": [
+          "boto3"
+        ]
+      },
+      "notebook_count": 0,
+      "terraform_file_count": 15,
+      "terraform_present": true,
+      "k8s_manifest_count": 0,
+      "helm_present": false,
+      "pulumi_present": false,
+      "ansible_present": false,
+      "dockerfile_count": 4,
+      "ui_component_file_count": 132,
+      "sql_file_count": 0,
+      "sql_loc": 0,
+      "css_loc": 8,
+      "css_loc_ratio": 0.0002,
+      "data_file_count": 0,
+      "terraform_loc": 315,
+      "k8s_loc": 0,
+      "docker_compose_file_count": 1,
+      "docker_compose_loc": 111,
+      "helm_file_count": 0,
+      "helm_loc": 0,
+      "ansible_file_count": 0,
+      "ansible_loc": 0,
+      "cloudformation_file_count": 0,
+      "cloudformation_loc": 0,
+      "dockerfile_loc": 67,
+      "iac_loc": 493,
+      "iac_file_count": 20,
+      "iac_loc_by_type": {
+        "Terraform": 315,
+        "Docker Compose": 111,
+        "Dockerfile": 67
+      }
+    }
+  },
+  "git": {
+    "anonymizer_commit_detected": false,
+    "anonymizer_commit_excluded": false,
+    "total_commits": 14,
+    "total_commits_including_anonymizer": 14,
+    "first_commit": "2026-08-22T12:22:50+05:30",
+    "last_commit": "2026-08-22T15:01:33+05:30",
+    "span_days": 0,
+    "recency_days": 0,
+    "human_authors": 1,
+    "bot_authors": 0,
+    "bot_commit_count": 0,
+    "bot_commit_ratio": 0.0,
+    "conventional_rate_last_200": 0.5,
+    "tag_count": 0,
+    "semver_tag_count": 0,
+    "merge_commit_count": 6,
+    "looks_like_burst_copy": false,
+    "class_a_count": 0,
+    "class_b_count": 0,
+    "class_c_pre_count": 0,
+    "class_d_bug_count": 1,
+    "confirmed_candidate_count": 0,
+    "provisional_candidate_count": 0,
+    "analyzed_commits": 8,
+    "full_history_scanned": true,
+    "commits_by_month": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8
+    ],
+    "active_days": 1
+  },
+  "classification": {
+    "primary_class": "infra",
+    "class_confidence": {
+      "frontend": 0.161,
+      "backend": 0.3057,
+      "ml": 0.1287,
+      "ai_research": 0.0644,
+      "data_engineering": 0.0,
+      "security": 0.0,
+      "infra": 0.3401
+    },
+    "is_monorepo": true,
+    "is_likely_demo": false,
+    "demo_reasoning": []
+  },
+  "capacity": 7,
+  "ext_signals": {
+    "structure": {
+      "probe": "code_structure",
+      "ok": true,
+      "prod_loc": 52061,
+      "source_files": 1481,
+      "test_files": 304,
+      "n_functions_seen": 3662,
+      "n_files_parsed": 1481,
+      "n_files_parse_failed": 0,
+      "source_files_unparsed": 0,
+      "decisions_gini_top1pct": 0.1415,
+      "error_handling_per_kloc": 11.544,
+      "structure_probe_mode": "deterministic"
+    },
+    "history": {
+      "probe": "git_history",
+      "ok": true,
+      "ref_analysed": null,
+      "ref_commits": 14,
+      "ref_candidates_considered": 7,
+      "ref_choice_reason": "Model successfully extracted history signals",
+      "ref_choice_overrode_deepest": false,
+      "anonymizer_tip_detected": false,
+      "development_substance": null,
+      "development_substance_note": null,
+      "real_commits": 8,
+      "mineable_commits": 7,
+      "human_authors": 1,
+      "history_probe_mode": "deterministic",
+      "history_model": null
+    },
+    "build": null
+  },
+  "material": {
+    "probe": "material_census",
+    "scored": true,
+    "provider": "claude",
+    "model": "claude-opus-5",
+    "skip_reason": null,
+    "logic_depth": 5,
+    "self_contained": 0.85,
+    "minable_ideas_total": 24,
+    "n_minable_ideas": 15,
+    "defect_repairs_with_regression_test": null,
+    "n_complex_logic": 4,
+    "n_substantial_features": 12,
+    "n_defect_repairs": 5,
+    "n_work_units": null,
+    "n_net_new_capabilities": null,
+    "n_repo_evolutions": 3,
+    "n_performance_work": null,
+    "n_hardening_work": null,
+    "n_integration_work": null,
+    "task_type_counts": {
+      "total_candidates": 3,
+      "n_net_new": 1,
+      "n_agentic": 3,
+      "n_bug_repair": 1,
+      "n_repo_evolution": 1
+    },
+    "census_platform_note": "lane wall clock in seconds: digest 426, tree scan 136, history scan 9, structure 73, history depth 11, census 0, mining 0, classify 0, total 426; independent lanes ran at the same time, so the total is below their sum"
+  }
+}

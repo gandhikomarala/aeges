@@ -1,0 +1,20 @@
+{
+  "repo_id": "repo-6da4190107f0",
+  "measurer_version": "repo-quality-evaluation-measure-ext@1",
+  "provider": "claude",
+  "model": "claude-opus-5",
+  "mined_at": "2026-08-25T05:03:46.650012+00:00",
+  "total_candidates": 5,
+  "n_net_new": 1,
+  "n_agentic": 4,
+  "n_bug_repair": 2,
+  "n_repo_evolution": 1,
+  "scored": true,
+  "mined_task_summaries": [
+    "net_new: Engineered real-time semantic ATS resume scoring algorithm.",
+    "bug_repair: Fixed race conditions during simultaneous PDF and Docx bulk uploads.",
+    "repo_evolution: Abstracted complex ATS rules into dynamically fetchable Supabase store.",
+    "bug_repair: Resolved precision loss during LaTeX template export."
+  ],
+  "skip_reason": null
+}
