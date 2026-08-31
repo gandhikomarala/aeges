@@ -16,11 +16,11 @@ class IncidentRCAEngine:
         
         probable_cause = (
             f"Deployment v2.8 for '{service}' expects column 'stripe_customer_id' on 'payments' table, "
-            f"but database migration 042_add_stripe_id.sql was omitted during deployment rollout."
+            f"but database migration 42_add_stripe_id.sql was omitted during deployment rollout."
         )
         
         remediation = [
-            "Execute missing Alembic migration: `alembic upgrade 042_add_stripe_id`",
+            "Execute missing Alembic migration: `alembic upgrade 42_add_stripe_id`",
             "Verify database schema matches SQLAlchemy model constraints",
             "Restart payment-service worker pods to clear cached connection pool",
             "Monitor error rate on /api/v1/payments for 15 minutes"

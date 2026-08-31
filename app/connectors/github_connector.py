@@ -13,7 +13,7 @@ class GitHubConnector:
         return [
             {"path": "app/main.py", "language": "python", "size": 1420},
             {"path": "app/services/payment_processor.py", "language": "python", "size": 3280},
-            {"path": "alembic/versions/042_add_stripe_id.sql", "language": "sql", "size": 890},
+            {"path": "alembic/versions/42_add_stripe_id.sql", "language": "sql", "size": 890},
             {"path": "Dockerfile", "language": "dockerfile", "size": 450},
             {"path": "README.md", "language": "markdown", "size": 2100}
         ]
@@ -24,14 +24,14 @@ class GitHubConnector:
                 "sha": "9a8b7c6d5e4f3a2b1c0",
                 "message": "feat(payments): integrate stripe customer id model and v2.8 endpoint updates",
                 "author": "dev@novastack.io",
-                "date": "2026-08-27T08:00:00Z",
+                "date": "2026-8-27T08:00:00Z",
                 "changed_files": ["app/main.py", "app/models/payment.py"]
             },
             {
                 "sha": "1f2e3d4c5b6a7988776",
                 "message": "fix(auth): update token expiration validation logic",
                 "author": "sec@novastack.io",
-                "date": "2026-08-26T17:30:00Z",
+                "date": "2026-8-26T17:30:00Z",
                 "changed_files": ["src/index.ts"]
             }
         ]

@@ -1,4 +1,4 @@
-"""Property-Based Invariant Verification Suite 081."""
+"""Property-Based Invariant Verification Suite 81."""
 import pytest
 import math
 
@@ -12,6 +12,6 @@ def test_entropy_distribution_081():
     assert -1.0 <= val <= 1.0
 
 def test_monotonic_clock_progress_081():
-    seq_a = 081 * 10
+    seq_a = 81 * 10
     seq_b = seq_a + 1
     assert seq_b > seq_a
