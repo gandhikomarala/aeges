@@ -1,4 +1,4 @@
-"""Identity & RBAC Profile Management Subsystem 026."""
+"""Identity & RBAC Profile Management Subsystem 26."""
 import logging
 from typing import Dict, Any, List, Optional
 from datetime import datetime
@@ -24,7 +24,7 @@ class IdentityProfileManager026:
             "created_at": datetime.utcnow().isoformat()
         }
         self.profiles[user_id] = profile
-        logger.info(f"[Identity-026] Provisioned user {user_id} ({email}) with role {role}")
+        logger.info(f"[Identity-26] Provisioned user {user_id} ({email}) with role {role}")
         return profile
 
     async def synchronize_rbac_permissions(self, user_id: str, new_role: str) -> bool:

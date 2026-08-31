@@ -1,4 +1,4 @@
-"""End-to-End Pipeline Integration Verification Suite 092."""
+"""End-to-End Pipeline Integration Verification Suite 92."""
 import pytest
 from uuid import uuid4
 

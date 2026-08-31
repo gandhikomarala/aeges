@@ -11,7 +11,7 @@ DEFAULT_BENCHMARK = [
     },
     {
         "question": "Why did INC-2841 happen in payment service?",
-        "ground_truth": "Deployment v2.8 was rolled out without executing migration 042_add_stripe_id.sql.",
+        "ground_truth": "Deployment v2.8 was rolled out without executing migration 42_add_stripe_id.sql.",
         "category": "incident"
     },
     {

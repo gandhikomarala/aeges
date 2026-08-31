@@ -11,7 +11,7 @@ class PagerDutyConnector:
                 "service": "payment-service",
                 "severity": "CRITICAL",
                 "summary": "Elevated 500 HTTP errors on /api/v1/charges exceeded 15% threshold",
-                "created_at": "2026-08-27T08:15:00Z"
+                "created_at": "2026-8-27T08:15:00Z"
             }
         ]
 

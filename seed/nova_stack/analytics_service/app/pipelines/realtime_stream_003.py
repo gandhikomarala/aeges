@@ -1,4 +1,4 @@
-"""Real-Time Event Stream Processor 003."""
+"""Real-Time Event Stream Processor 3."""
 import logging
 from typing import List, Dict, Any
 from datetime import datetime
