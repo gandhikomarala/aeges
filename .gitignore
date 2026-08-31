@@ -1,7 +1,20 @@
+# Environments
+.env
+.env.*
+!.env.example
+*.env
+!.env.template
+
+# Python
 __pycache__/
 *.pyc
-.env
-*.log
-node_modules/
+.pytest_cache/
+.ruff_cache/
 .venv/
-venv/
+dist/
+build/
+
+# Node
+node_modules/
+.next/
+out/

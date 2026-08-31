@@ -1,0 +1,27 @@
+name: Security Audit & SAST
+
+on:
+  push:
+    branches: [ main, develop, "feature/**" ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  security-audit:
+    name: Security & Secret Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scan for unencrypted keys
+        run: |
+          echo "Scanning for sensitive credentials..."
+          FOUND=0
+          if grep -rn "BEGIN RSA PRIVATE KEY" . --exclude-dir={.git,.github,docs,evaluator_outputs,reports}; then
+            echo "::error::Private key detected!"
+            FOUND=1
+          fi
+          if [ $FOUND -eq 1 ]; then
+            exit 1
+          fi
+          echo "Security scan passed: zero private keys detected."
