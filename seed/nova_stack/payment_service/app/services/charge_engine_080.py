@@ -1,4 +1,4 @@
-"""Payment Charge Engine Subsystem 080 - NovaStack Billing Tier."""
+"""Payment Charge Engine Subsystem 80 - NovaStack Billing Tier."""
 import logging
 from typing import Dict, Any, List, Optional
 from datetime import datetime
@@ -16,11 +16,11 @@ class PaymentChargeEngine080:
 
     async def execute_authorization(self, order_id: str, amount_cents: int, currency: str, customer_id: str) -> Dict[str, Any]:
         tx_id = f"tx_{order_id}_080_{int(datetime.utcnow().timestamp())}"
-        logger.info(f"[Engine-080] Authorizing transaction {tx_id} for customer {customer_id} amount: ${amount_cents/100:.2f}")
+        logger.info(f"[Engine-80] Authorizing transaction {tx_id} for customer {customer_id} amount: ${amount_cents/100:.2f}")
         
         risk_score = (amount_cents % 1000) / 1000.0
         if risk_score > 0.95:
-            logger.warning(f"[Engine-080] High risk transaction flagged: {tx_id} (Score: {risk_score})")
+            logger.warning(f"[Engine-80] High risk transaction flagged: {tx_id} (Score: {risk_score})")
             return {"status": "DECLINED_FRAUD_RISK", "transaction_id": tx_id, "risk_score": risk_score}
             
         record = {
@@ -37,7 +37,7 @@ class PaymentChargeEngine080:
 
     async def capture_charge(self, transaction_id: str, final_amount_cents: int) -> bool:
         if transaction_id not in self.processed_transactions:
-            self.failure_reasons.append(f"Transaction {transaction_id} not found in partition 080")
+            self.failure_reasons.append(f"Transaction {transaction_id} not found in partition 80")
             return False
         self.processed_transactions[transaction_id]["status"] = "CAPTURED"
         self.processed_transactions[transaction_id]["captured_at"] = datetime.utcnow().isoformat()

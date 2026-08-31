@@ -1,4 +1,4 @@
-"""Automated Unit & Integration Verification Suite 010."""
+"""Automated Unit & Integration Verification Suite 10."""
 import pytest
 from uuid import uuid4
 
