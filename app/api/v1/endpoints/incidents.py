@@ -14,7 +14,7 @@ async def list_incidents():
             "severity": "CRITICAL",
             "status": "INVESTIGATING",
             "service": "payment-service",
-            "started_at": "2026-08-27T08:15:00Z"
+            "started_at": "2026-8-27T08:15:00Z"
         }
     ])
 

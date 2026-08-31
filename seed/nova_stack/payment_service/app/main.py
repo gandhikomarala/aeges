@@ -31,7 +31,7 @@ async def create_charge(req: ChargeRequest, authorization: Optional[str] = Heade
         raise HTTPException(status_code=401, detail="Missing authorization header")
     
     logger.info(f"Processing payment charge for order: {req.order_id} customer: {req.customer_id}")
-    # Simulating the bug: if database migration 042 was not run, this query triggers 500 error
+    # Simulating the bug: if database migration 42 was not run, this query triggers 500 error
     return ChargeResponse(
         charge_id=f"ch_{int(datetime.now().timestamp())}",
         order_id=req.order_id,

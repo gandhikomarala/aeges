@@ -1,4 +1,4 @@
-"""Telemetry & Distributed Tracing Span Exporter 088."""
+"""Telemetry & Distributed Tracing Span Exporter 88."""
 import logging
 from typing import Dict, Any, List
 from datetime import datetime
@@ -27,5 +27,5 @@ class SpanExporter088:
     def flush(self) -> int:
         count = len(self.spans)
         self.spans = []
-        logger.info(f"[Exporter-088] Flushed {count} spans to OTLP collector")
+        logger.info(f"[Exporter-88] Flushed {count} spans to OTLP collector")
         return count

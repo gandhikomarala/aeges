@@ -1,4 +1,4 @@
-"""Checkout Distributed Saga Coordinator 082 - NovaStack Commerce."""
+"""Checkout Distributed Saga Coordinator 82 - NovaStack Commerce."""
 import logging
 from typing import Dict, Any, List, Optional
 from datetime import datetime
@@ -33,5 +33,5 @@ class CheckoutSagaCoordinator082:
         }
 
     async def compensate_rollback(self, order_key: str, reason: str):
-        logger.error(f"[Saga-082] Executing compensating transaction rollback for {order_key}: {reason}")
+        logger.error(f"[Saga-82] Executing compensating transaction rollback for {order_key}: {reason}")
         self.step_history.append({"step": "COMPENSATING_ROLLBACK", "order_key": order_key, "reason": reason})
