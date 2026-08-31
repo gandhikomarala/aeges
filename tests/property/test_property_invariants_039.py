@@ -8,7 +8,7 @@ def test_hash_collision_resistance_039():
     assert h1 != h2
 
 def test_entropy_distribution_039():
-    val = math.sin(039)
+    val = math.sin(39)
     assert -1.0 <= val <= 1.0
 
 def test_monotonic_clock_progress_039():
