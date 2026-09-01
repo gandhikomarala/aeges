@@ -1,15 +1,15 @@
 # AegisAI Guardrails — Enterprise LLM Safety & Red-Teaming Gateway
 
-AegisAI Guardrails — Enterprise LLM Safety & Red-Teaming Gateway is a production-grade enterprise application designed with domain-driven architecture, automated quality validation, and high-performance microservices.
+AegisAI Guardrails is a production-grade security and observability gateway for Large Language Models (LLMs). It provides sub-millisecond prompt injection defenses, PII/PHI automated entity redaction, RAG hallucination and context relevance evaluation, and compliance arbitration conforming to the NIST AI Risk Management Framework and EU AI Act.
 
 ---
 
 ## Dependencies
 
-* **Runtime**: Python 3.10+ / Node.js 18+
-* **Framework**: FastAPI, Uvicorn, Pydantic v2
+* **Runtime**: Python 3.10+
+* **Core Framework**: FastAPI, Uvicorn, Pydantic v2
 * **Quality & Test**: Pytest, Pytest-cov
-* **Frontend**: HTML5 Canvas / ES6+, Zero-Dependency Web Client
+* **Frontend Dashboard**: HTML5 / ES6 Vanilla Client, Web Audio Alerts
 
 ---
 
@@ -17,7 +17,7 @@ AegisAI Guardrails — Enterprise LLM Safety & Red-Teaming Gateway is a producti
 
 ### 1. Set Up Python Virtual Environment
 ```bash
-git clone gandhikomarala/aeges.git
+git clone git@github.com:gandhikomarala/aeges.git
 cd aeges
 python -m venv venv
 # Windows:
@@ -26,7 +26,7 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-### 2. Install Dependencies
+### 2. Install Project Dependencies
 ```bash
 python -m pip install --upgrade pip
 pip install -r requirements.txt
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 Build containerized production image locally:
 ```bash
-docker build -t aeges:latest .
+docker build -t aegisai-guardrails:latest .
 ```
 
 ---
@@ -50,12 +50,12 @@ docker build -t aeges:latest .
 python -m uvicorn Backend.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-### Containerized Orchestration
+### Containerized Deployment
 ```bash
 docker-compose up -d --build
 ```
 
-### Static Web UI
+### Static Dashboard UI
 ```bash
 python -m http.server 8000
 ```
@@ -64,8 +64,9 @@ python -m http.server 8000
 
 ## Usage
 
-1. Access the web dashboard via `http://localhost:8000` or the live GitHub Pages link.
-2. Interact with the core domain engine, real-time analytics, and data persistence layers.
+1. Open `http://localhost:8000` or the live GitHub Pages portal.
+2. Configure active safety threshold levels (Low, Medium, High, Strict).
+3. Test adversarial prompts (Jailbreaks, PII exfiltration, hallucination traps) in real-time.
 
 ---
 
